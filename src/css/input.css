@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, main {
+   /* @apply sm:h-full; */
+}
+body, html, main {
+   @apply min-h-full;
+}
+body {
+   @apply bg-imgDefault bg-cover;
+}
+main {
+   @apply overflow-hidden;
+}
+header {
+   @apply min-h-[50vh] block pt-10 flex items-center justify-evenly bg-imgDefault bg-cover;
+}
+footer {
+   @apply flex justify-center items-center min-h-[30vh];
+}
+
+
+/* CORES */
+body {
+   @apply bg-gradient-to-tr from-yellow-700 via-yellow-600 to-yellow-800 pb-10;
+}
+header {
+   @apply bg-white;
+}
+.aovivo .bullet-fixed, .aovivo .bullet, .btn-play, .btn-pause {
+   @apply bg-red-700;
+}
+.btn-play, .btn-pause {
+   @apply bg-yellow-700;
+}
+.btn-content-a, .btn-content-c, .btn-content-b, .btn-content-d {
+   @apply bg-amber-100;
+}
+
+
+/* GERAIS */
+.publicidade {
+   @apply z-40 mx-auto table;
+}
+
+.logo {
+   @apply w-96 mx-auto py-5 table max-w-full px-4 pb-36;
+}
+.aovivo {
+   @apply w-32 flex items-center flex-wrap flex-row mx-auto rounded-full py-1 px-6 font-bold mt-10;
+}
+.aovivo .bullet-container {
+   @apply relative flex -top-[5px] ml-1;
+}
+.aovivo .bullet-fixed {
+   @apply h-3 w-3  block rounded-full absolute z-10 top-0 left-[8px];
+}
+.aovivo .bullet {
+   @apply h-3 w-3 rounded-full block ml-2 animate-ping absolute;
+}
+
+/* BUTTONS */
+.btn-content-a, .btn-content-c {
+   @apply bg-opacity-50 flex flex-wrap justify-center content-center h-64 w-64 rounded-full;
+}
+.btn-content-a {
+   @apply -mt-32 relative mx-auto;
+}
+.btn-content-b, .btn-content-d {
+   @apply bg-opacity-50 flex flex-wrap justify-center content-center h-56 w-56 rounded-full;
+}
+.btn-content-c {
+   @apply absolute animate-ping;
+}
+.btn-content-d {
+   @apply absolute animate-ping top-4 delay-150;
+}
+.btn-play {
+   @apply h-48 w-48 hover:h-52 hover:w-52 transition-all duration-300 rounded-full flex flex-wrap justify-center content-center z-40;
+}
+.btn-pause {
+   @apply h-48 w-48 hover:h-52 hover:w-52 transition-all duration-300 rounded-full flex flex-wrap justify-center content-center z-40;
+}
+.btn-circle {
+   @apply rounded-full h-40 w-40 flex flex-wrap justify-center content-center border-4 border-solid;
+}
+
+
+/* REDE SOCIAIS */
+.box-redes-sociais, .box-whatsapp-links {
+   @apply flex flex-wrap flex-row justify-center text-white text-3xl mt-10 z-10 -top-32;
+}
+.box-redes-sociais a, .box-whatsapp-links a {
+   @apply mx-3 block w-8 h-8 text-2xl hover:scale-125 transition-all duration-300 z-40;
+}
+.box-whatsapp-links a {
+   @apply border-2 border-white rounded-full px-4 py-1 flex justify-center items-center;
+}

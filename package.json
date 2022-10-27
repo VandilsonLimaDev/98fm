@@ -1,0 +1,15 @@
+{
+  "name": "101fm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "tailwindcss -i ./src/css/input.css -o ./dist/css/styles.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  }
+}
